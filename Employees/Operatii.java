@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Operatii extends Demo {
 
-    public static void employee_Insert()
+    public static void employeeInsert()
     {
         try
         {

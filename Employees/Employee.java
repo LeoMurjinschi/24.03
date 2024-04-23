@@ -3,20 +3,20 @@ package Employees;
 public class Employee{
     private int Id;
     private String nume;
-    private String Prenume;
-    private String IDNP;
-    private String Departament;
-    private double Salariu;
-    private String Functie;
+    private String prenume;
+    private String idnp;
+    private String departament;
+    private double salariu;
+    private String functie;
 
     public Employee(int id, String nume, String prenume, String IDNP, String departament, double salariu, String functie) {
         Id = id;
         this.nume = nume;
-        Prenume = prenume;
-        this.IDNP = IDNP;
-        Departament = departament;
-        Salariu = salariu;
-        Functie = functie;
+        this.prenume = prenume;
+        this.idnp = IDNP;
+        this.departament = departament;
+        this.salariu = salariu;
+        this.functie = functie;
     }
 
     public Employee(){
@@ -26,21 +26,21 @@ public class Employee{
 
     // GET
     public int getId() {return Id;}
-    public String getPrenume() {return Prenume;}
+    public String getPrenume() {return prenume;}
     public String getNume() {
         return nume;
     }
     public String getIDNP() {
-        return IDNP;
+        return idnp;
     }
     public String getDepartament() {
-        return Departament;
+        return departament;
     }
     public double getSalariu() {
-        return Salariu;
+        return salariu;
     }
     public String getFunctie() {
-        return Functie;
+        return functie;
     }
 
     //SET
@@ -49,17 +49,18 @@ public class Employee{
         this.nume = nume;
     }
     public void setPrenume(String prenume) {
-        Prenume = prenume;
+        this.prenume = prenume;
     }
     public void setIDNP(String idnp) {
-        IDNP = idnp;
+        this.idnp = idnp;
     }
-    public void setDepartament(String departament) {Departament = departament;}
+    public void setDepartament(String departament) {
+        this.departament = departament;}
     public void setSalariu(double salariu) {
-        Salariu = salariu;
+        this.salariu = salariu;
     }
     public void setFunctie(String functie) {
-        Functie = functie;
+        this.functie = functie;
     }
 
 
@@ -68,11 +69,11 @@ public class Employee{
         return "Employee{" +
                 "Id=" + Id +
                 ", Nume='" + nume + '\'' +
-                ", Prenume='" + Prenume + '\'' +
-                ", IDNP='" + IDNP + '\'' +
-                ", Departament='" + Departament + '\'' +
-                ", Salariu=" + Salariu +
-                ", Functie='" + Functie + '\'' +
+                ", Prenume='" + prenume + '\'' +
+                ", IDNP='" + idnp + '\'' +
+                ", Departament='" + departament + '\'' +
+                ", Salariu=" + salariu +
+                ", Functie='" + functie + '\'' +
                 '}';
     }
 }

@@ -18,7 +18,7 @@ public class Menu extends Demo{
 
             switch (ras) {
                 case 1: {
-                    Operatii.employee_Insert();
+                    Operatii.employeeInsert();
                     break;
                 }
                 case 2: {
