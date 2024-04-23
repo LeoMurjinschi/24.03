@@ -2,14 +2,21 @@ package Employees;
 
 public class Employee{
     private int Id;
-    private String Nume;
+    private String nume;
     private String Prenume;
     private String IDNP;
     private String Departament;
     private double Salariu;
     private String Functie;
 
-    public Employee(int id, String nume, String prenume, String idnp, String departament, String functie, double salariu) {
+    public Employee(int id, String nume, String prenume, String IDNP, String departament, double salariu, String functie) {
+        Id = id;
+        this.nume = nume;
+        Prenume = prenume;
+        this.IDNP = IDNP;
+        Departament = departament;
+        Salariu = salariu;
+        Functie = functie;
     }
 
     public Employee(){
@@ -21,7 +28,7 @@ public class Employee{
     public int getId() {return Id;}
     public String getPrenume() {return Prenume;}
     public String getNume() {
-        return Nume;
+        return nume;
     }
     public String getIDNP() {
         return IDNP;
@@ -39,7 +46,7 @@ public class Employee{
     //SET
     public void setId(int id) {Id = id;}
     public void setNume(String nume) {
-        Nume = nume;
+        this.nume = nume;
     }
     public void setPrenume(String prenume) {
         Prenume = prenume;
@@ -56,6 +63,16 @@ public class Employee{
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "Id=" + Id +
+                ", Nume='" + nume + '\'' +
+                ", Prenume='" + Prenume + '\'' +
+                ", IDNP='" + IDNP + '\'' +
+                ", Departament='" + Departament + '\'' +
+                ", Salariu=" + Salariu +
+                ", Functie='" + Functie + '\'' +
+                '}';
+    }
 }

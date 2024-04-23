@@ -24,8 +24,8 @@ public class Menu extends Demo{
                 case 2: {
                     if(emp.size()!=0)
                     {
-                        Operatii.employee_Read();
-                        Operatii.employee_Delete();
+                        Operatii.employeeRead();
+                        Operatii.employeeDelete();
                     }
                     else
                     {
@@ -36,7 +36,7 @@ public class Menu extends Demo{
                 case 3: {
                     if(emp.size()!=0)
                     {
-                        Operatii.employee_Read();
+                        Operatii.employeeRead();
                     }
                     else
                     {
@@ -47,8 +47,8 @@ public class Menu extends Demo{
                 case 4: {
                     if(emp.size()!=0)
                     {
-                        Operatii.employee_Read();
-                        Operatii.employee_Edit();
+                        Operatii.employeeRead();
+                        Operatii.employeeEdit();
                     }
                     else
                     {

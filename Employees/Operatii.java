@@ -15,6 +15,7 @@ public class Operatii extends Demo {
 
             System.out.println("\n\n\n\n\nIntroduceti id-ul angajatului:");
             id=in.nextInt();
+            in.nextLine();
             System.out.println("Introduceti numele angajatului:");
             nume=in.nextLine();
             System.out.println("Introduceti prenumele angajatului:");
@@ -28,7 +29,8 @@ public class Operatii extends Demo {
             System.out.println("Introduceti salariul angajatului:");
             salariu=in.nextDouble();
 
-            Employee a = new Employee(id,nume,prenume,idnp,departament,functie,salariu);
+            Employee a = new Employee(id,nume,prenume,idnp,departament,salariu,functie);
+            System.out.println(a);
             emp.add(a);
         }
         catch (Exception ex)
@@ -37,7 +39,7 @@ public class Operatii extends Demo {
         }
     }
 
-    public static void employee_Read()
+    public static void employeeRead()
     {
         System.out.println("\n\n\n\nAngajatii: ");
         for (int i = 0; i < emp.size(); i++) {
@@ -46,7 +48,7 @@ public class Operatii extends Demo {
         }
     }
 
-    public static void employee_Delete()
+    public static void employeeDelete()
     {
         try
         {
@@ -69,7 +71,7 @@ public class Operatii extends Demo {
         }
     }
 
-    public static void employee_Edit()
+    public static void employeeEdit()
     {
         try
         {
@@ -140,7 +142,7 @@ public class Operatii extends Demo {
                 default:
                 {
                     System.out.println("\n\nNu exista asa optiune!\n\n\n");
-                    Operatii.employee_Edit();
+                    Operatii.employeeEdit();
                     break;
                 }
             }
